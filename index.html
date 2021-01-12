@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>RPS Game</title>
+    <!-- Link CSS here -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <title>RPS Game</title>
-  <!-- Link CSS here -->
-  <link type='text/css' rel='stylesheet' href='css/style.css' />
-</head>
-
-<body>
-  
-   <!-- HTML/CSS options: In the div below. 
+  <body>
+    <!-- HTML/CSS options: In the div below. 
         1. In the header tag, change a title.
         2. In a paragraph tag, add instructions on how to play the game.
         3. Change the RPS image.
         4. Style your page with colors, fonts, etc.
      -->
-    
-  <div class="row">
+
+    <div class="row">
       <h1>Rock Paper Scissors</h1>
-      <img src="http://www.coltnews.com/wp-content/uploads/2016/04/RPS.png">
+      <img/>
 
       <h3>Please Submit Your Choice Below</h3>
       <div>
-        <input id="input">
+        <input id="input" />
         <button id="shoot">Shoot!</button>
+        <button id="refresh">Refresh!</button>
       </div>
 
       <div id="choices" class="row">
@@ -36,13 +35,36 @@
           <p id="computerChoice"></p>
         </div>
       </div>
-      <div id="result"></div>
-  </div>
+      <div></div>
+      <h2 id="result">
+      </h2>
+    </div>
+    <h3 class="count">
+      <div class="pc">
+        Player wins
+      </div>
+      <div class="gc">
+        Game counter
+      </div>
+      <div class="cc">
+        Computer wins
+      </div>
+    </h3>
+    <h5 class="counter">
+      <div class="playerc" id="playercounter">
+        0
+      </div>
+      <div class="gamec" id="gamecounter">
+        0
+      </div>
+      <div id="computer--counter">
+        0
+      </div>
+    </h5>
 
-  <!-- Link JQuery here -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <!-- Link script.js here -->
-  <script src='js/script.js'></script>
-</body>
-
+    <!-- Link JQuery here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Link script.js here -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
