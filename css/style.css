@@ -1,40 +1,73 @@
-*{
-  font-family: 'Yusei Magic', sans-serif;
+*{font-family: 'Press Start 2P', cursive;
+  color:limegreen;
 }
-.row{
+
+.container {
+    width:50%;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+  margin-left:25%
+}
+
+.tile {
+    width:20%;
+    padding:3%;
+  height:80px;
+  text-align:center;
+  color:limegreen;
+}
+
+.right {
+    border-right: 3px solid black;
+  border-color:limegreen;
+}
+
+.bottom {
+    border-bottom: 3px solid black;
+  border-color:limegreen;
+}
+
+body{
+  background-image: url("https://i.imgur.com/VC03Kas.gif?noredirect");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+h1{
+  text-align:center;
+  margin-top:10vh;
+  color:limegreen;
+}
+button{
+  size: 50%;
+  margin-top:30px;
+  margin-color:limegreen;
+  text-align:center;
+}
+img{
+  height:5000%;
+}
+.container2{
+  text-align:center;
+}
+.wins{
+  
+  display:inline;
+  padding:20px;
+  color:limegreen;
+}
+.cont3{
+  margin-top:5vh;
   text-align:center;
   
 }
-body{
-  background-color:grey;
+.cont4{
+  margin-top:5vh;
+  text-align:center;
 }
-#choices{
-  display:flex;
-  justify-content:space-between;
-  margin:100px;
-  
+.X-player-wins{
+  padding-right:10vh;
 }
-#message{
- color:red;
-}
-h4{
-  font-size:40px;
-}
-
-h3 {
-  display:flex;
-  justify-content:space-around;
-  font-size:40px;
-  top:100px;
-}
-#result {
-  z-index;5000:
-}
-p{
-  font-size:25px;
-}
-h5{
-  font-size:40px;
-  display:flex;
-  justify-content:space-around;
+.O-player-wins{
+  padding:10vh;
 }

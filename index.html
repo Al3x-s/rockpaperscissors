@@ -1,69 +1,88 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RPS Game</title>
+    <title>Tic Tac Toe Project</title>
     <!-- Link CSS here -->
     <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+</style>
   </head>
 
   <body>
-    <!-- HTML/CSS options: In the div below. 
-        1. In the header tag, change a title.
-        2. In a paragraph tag, add instructions on how to play the game.
-        3. Change the RPS image.
-        4. Style your page with colors, fonts, etc.
-     -->
-
-    <div class="row">
-      <h1>Rock Paper Scissors</h1>
-      <img/>
-
-      <h3>Please Submit Your Choice Below</h3>
-      <div>
-        <input id="input" />
-        <button id="shoot">Shoot!</button>
-        <button id="refresh">Refresh!</button>
+    <h1>Tic Tac Toe</h1>
+    <div class="container"> 
+      <div id="tile1" class="tile right bottom d1">
+        <span id="text1"></span>
+        <button id="button1">|        <br>|        |<br>        |</button>
       </div>
-
-      <div id="choices" class="row">
-        <div>
-          <h4>User Choice</h4>
-          <p id="userChoice"></p>
-        </div>
-        <div>
-          <h4>Computer Choice</h4>
-          <p id="computerChoice"></p>
-        </div>
+      <div id="tile2" class="tile right bottom">
+        <span id="text2"></span>
+        <button id="button2">|        <br>|        |<br>        |</button>
       </div>
-      <div></div>
-      <h2 id="result">
-      </h2>
+      <div id="tile3" class="tile bottom">
+        <span id="text3"></span>
+        <button id="button3">|        <br>|        |<br>        |</button>
+      </div>
+      <div id="tile4" class="tile right bottom">
+        <span id="text4"></span>
+        <button id="button4">|        <br>|        |<br>        |</button>
+      </div>
+      <div id="tile5" class="tile right bottom d1">
+        <span id="text5"></span>
+        <button id="button5">|        <br>|        |<br>        |</button>
+      </div>
+      <div id="tile6" class="tile bottom">
+        <span id="text6"></span>
+        <button id="button6">|        <br>|        |<br>        |</button>
+      </div>
+      <div id="tile7" class="tile right">
+        <span id="text7"></span>
+        <button id="button7">|        <br>|        |<br>        |</button>
+      </div>
+      <div id="tile8" class="tile right">
+        <span id="text8"></span>
+        <button id="button8">|        <br>|        |<br>        |</button>
+      </div>
+      <div id="tile9" class="tile d1">
+        <span id="text9"></span>
+        <button id="button9">|        <br>|        |<br>        |</button>
+      </div>
     </div>
-    <h3 class="count">
-      <div class="pc">
-        Player wins
+    <div class="container2">
+      
+      <div class="resetbutton">
+        <button>
+          reset
+        </button>
       </div>
-      <div class="gc">
-        Game counter
+      <div class="undo">
+        <button>
+          undo
+        </button>
       </div>
-      <div class="cc">
-        Computer wins
-      </div>
-    </h3>
-    <h5 class="counter">
-      <div class="playerc" id="playercounter">
-        0
-      </div>
-      <div class="gamec" id="gamecounter">
-        0
-      </div>
-      <div id="computer--counter">
-        0
-      </div>
-    </h5>
+      
+    </div>
+    <div class="cont3">
+      <div class="wins">
+          x player wins
+        </div>
+        <div class="wins">
+          O player wins
+        </div>
+    </div>
+    <div class="cont4">
+      <div id="X-player-Wins" class="wins X-player-Wins">
+          0
+        </div>
+        <div id="O-player-Wins" class="wins O-player-Wins">
+          0
+        </div>
+    </div>
+
 
     <!-- Link JQuery here -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <!-- Link script.js here -->
     <script src="js/script.js"></script>
   </body>
